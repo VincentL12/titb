@@ -10,12 +10,12 @@
     <section class="px-6">
         <div class="overflow-hidden border border-gray-100 rounded-md">
             <table class="min-w-full">
-                <thead class="rounded-lg" style="background-color:#FC9B5C; ">
+                <thead class="rounded-lg" style="background-color:#38b6ff; ">
                     <tr>
                         <x-table.head>Nama</x-table.head>
                         <x-table.head>Email</x-table.head>
-                        <x-table.head class="text-center">Role</x-table.head>
-                        <x-table.head class="text-center">Tanggal Bergabung</x-table.head>
+                        <x-table.head>Role</x-table.head>
+                        <x-table.head>Tanggal Bergabung</x-table.head>
                     </tr>
                 </thead>
 
@@ -27,9 +27,6 @@
                             </x-table.data>      
                             <x-table.data>
                                 <div class="overflow-hidden">{{ $activity->user->email }}</div>
-                            </x-table.data>
-                            <x-table.data>
-                                <div class="overflow-hidden">{{ $activity->user->bio }}</div>
                             </x-table.data>
                             <x-table.data>
                                 <div class="overflow-hidden">

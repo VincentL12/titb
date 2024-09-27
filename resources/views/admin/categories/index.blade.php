@@ -17,7 +17,7 @@
             <table class="min-w-full">
 
                 <thead style="border-radius:6px;">
-                    <tr class=" text-sm font-medium bg-gray-300 text-left" style="background-color:#FC9B5C; ">
+                    <tr class=" text-sm font-medium bg-gray-300 text-left" style="background-color:#38b6ff; ">
                         <x-table.head>No</x-table.head>
                         <x-table.head>Nama</x-table.head>
                         <x-table.head>Slug</x-table.head>

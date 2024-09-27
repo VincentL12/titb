@@ -9,7 +9,7 @@ class LoginResponse implements ContractsLoginResponse
     public function toResponse($request)
     {
         if (auth()->user()->isAdmin()) {
-            return redirect()->route('admin.index');
+            return redirect()->route('dashboard');
         }
         return redirect()->intended(config('fortify.home'));
     }
