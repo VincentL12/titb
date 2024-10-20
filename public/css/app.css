@@ -25782,7 +25782,7 @@ img.block.w-auto.h-10 {
 
 .text-black {
   --tw-text-opacity: 1;
-  color: rgba(0, 0, 0, var(--tw-text-opacity));
+  color: white;
 }
 
 .text-white {
@@ -25841,13 +25841,8 @@ img.block.w-auto.h-10 {
   color: #fff;
 }
 
-trix-editor.shadow-inner.bg-gray-100.h-56 {
-  color: white;
-}
-
-trix-toolbar .trix-button:not(:disabled) {
-  cursor: pointer;
-  background: white;
+trix-toolbar {
+  display: none !important;
 }
 
 input#email {

@@ -20,13 +20,6 @@
                 </x-sidenav.link>
             </div>
             @endif
-
-            <div>
-                <x-sidenav.link href="{{ route('dashboard.notifications.index') }}" :active="request()->routeIs('dashboard.notifications.index')">
-                    <x-zondicon-notifications-outline class="w-3 ml-2 mr-3" style="color:#FC9B5C;"/>
-                    <span>{{ __('Notifikasi') }}</span>
-                </x-sidenav.link>
-            </div>
         </div>
 
         @if(auth()->user()->isAdmin())
