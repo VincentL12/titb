@@ -10,11 +10,11 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function __contruct()
+    public function __construct()
     {
-        return $this->middleware([IsAdmin::class, Authenticate::class]);
+        $this->middleware([IsAdmin::class, Authenticate::class]);
     }
-
+    
     public function index()
     {
         return view('admin.dashboard.index');

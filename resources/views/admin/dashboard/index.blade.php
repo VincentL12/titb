@@ -9,38 +9,9 @@
                     Selamat datang admin
                 </h2>
                 <p class="mt-3 text-base leading-7 sm:mt-4 text-white">
-                    Feel confident in choosing the best energy assessor for your energy rating.
+                    Selamat anda berhasil menemukan page tersembunyi kami tetapi maaf, di sini tidak ada isinya cuman easter egg doang
                 </p>
-            </div>
-            <div class="mt-10 text-center sm:max-w-3xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-8">
-                <div>
-                    <p class="text-5xl font-extrabold leading-none text-white">
-                        119
-                    </p>
-                    <p class="mt-2 text-base font-medium leading-6 text-white">
-                        Energy raters
-                    </p>
-                </div>
-                <div class="mt-10 sm:mt-0">
-                    <p class="text-5xl font-extrabold leading-none text-white">
-                        6
-                    </p>
-                    <p class="mt-2 text-base font-medium leading-6 text-white">
-                        Quotes on average
-                    </p>
-                </div>
-                <div class="mt-10 sm:mt-0">
-                    <p class="text-5xl font-extrabold leading-none text-white">
-                        24 hours
-                    </p>
-                    <p class="mt-2 text-base font-medium leading-6 text-white">
-                        Average turnaround
-                    </p>
-                </div>
-            </div>
-            
         </section>
-
         </div>
     </div>
 </x-app-layout>

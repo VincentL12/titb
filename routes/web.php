@@ -57,27 +57,9 @@ Route::group(['prefix' => 'replies', 'as' => 'replies.'], function () {
     Route::get('reply/{id}/{type}', [ReplyController::class, 'redirect'])->name('replyAble');
 });
 
-Route::group(['prefix' => 'dashboard', 'as' => 'dashboard.'], function () {
-    /* Name: Notifications
-     * Url: /dashboard/notifications*
-     * Route: dashboard.notifications*
-     */
-    Route::group(['prefix' => 'notifications', 'as' => 'notifications.'], function () {
-        Route::get('/', [NotificationController::class, 'index'])->name('index');
-    });
-});
-
 // Profile
 Route::get('profile/user/{user:username}', [ProfileController::class, 'show'])->name('profile');
 
 // Follows
 Route::post('profile/user/{user:username}/follow', [FollowController::class, 'store'])->name('follow');
 
-Route::get('dashboard/users', [PageController::class, 'users'])->name('users');
-
-Route::get('/dashboard/categories/index', [PageController::class, 'categoriesIndex'])->name('categories.index');
-Route::get('/dashboard/categories/create', [PageController::class, 'categoriesCreate'])->name('categories.create');
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
