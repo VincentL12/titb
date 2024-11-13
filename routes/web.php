@@ -36,9 +36,6 @@ Route::group(['prefix' => 'threads', 'as' => 'threads.'], function () {
     Route::get('/{thread:slug}/edit', [ThreadController::class, 'edit'])->name('edit');
     Route::post('/{thread:slug}', [ThreadController::class, 'update'])->name('update');
     Route::get('/{category:slug}/{thread:slug}', [ThreadController::class, 'show'])->name('show');
-
-    Route::get('/{category:slug}/{thread:slug}/subscribe', [ThreadController::class, 'subscribe'])->name('subscribe');
-    Route::get('/{category:slug}/{thread:slug}/unsubscribe', [ThreadController::class, 'unsubscribe'])->name('unsubscribe');
     Route::get('/{category:slug}', [ThreadController::class, 'sortByCategory'])->name('sort');
 });
 
@@ -62,4 +59,5 @@ Route::get('profile/user/{user:username}', [ProfileController::class, 'show'])->
 
 // Follows
 Route::post('profile/user/{user:username}/follow', [FollowController::class, 'store'])->name('follow');
+
 
