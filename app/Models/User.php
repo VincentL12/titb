@@ -60,6 +60,7 @@ class User extends Authenticatable implements MustVerifyEmail, PointAble
         'remember_token',
         'two_factor_recovery_codes',
         'two_factor_secret',
+        'email',
     ];
 
     /**
@@ -93,11 +94,6 @@ class User extends Authenticatable implements MustVerifyEmail, PointAble
     public function userName(): string
     {
         return $this->username;
-    }
-
-    public function emailAddress(): string
-    {
-        return $this->email;
     }
 
     public function bio(): string
