@@ -6,7 +6,6 @@ use App\Events\ReplyWasCreated;
 use App\Events\ThreadWasCreated;
 use App\Listeners\AwardPointsForCreatingReply;
 use App\Listeners\AwardPointsForCreatingThread;
-use App\Listeners\SendNewReplyNotification;
 use App\Listeners\sendNewThreadNotification;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -25,7 +24,6 @@ class EventServiceProvider extends ServiceProvider
             SendEmailVerificationNotification::class,
         ],
         ReplyWasCreated::class => [
-            SendNewReplyNotification::class,
             AwardPointsForCreatingReply::class,
         ],
         ThreadWasCreated::class => [
