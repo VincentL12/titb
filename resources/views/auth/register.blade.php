@@ -15,6 +15,11 @@
             </div>
 
             <div class="mt-4">
+                <x-jet-label for="username" value="{{ __('Username') }}" />
+                <x-jet-input id="username" class="block w-80 mt-1" type="text" name="username" :value="old('username')" required autocomplete="username" />
+            </div>
+
+            <div class="mt-4">
                 <x-jet-label for="email" value="{{ __('Email') }}" />
                 <x-jet-input id="email" class="block w-full mt-1" type="email" name="email" :value="old('email')" required />
             </div>
@@ -59,6 +64,5 @@
     </x-jet-authentication-card2>
 
     <x-logos.register-avt>
-
     </x-logos.avatar>
 </x-base-layout>

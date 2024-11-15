@@ -37,6 +37,9 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+input#username {
+  color: black;
+}
 /*
 Sections
 ========

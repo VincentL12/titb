@@ -10,7 +10,7 @@ use Laravel\Fortify\Contracts\UpdatesUserProfileInformation;
 class UpdateUserProfileInformation implements UpdatesUserProfileInformation
 {
     /**
-     * Validate and update the given user's pr'username'  => $input['username'],ofile information.
+     * 
      *
      * @param  mixed  $user
      * @param  array  $input
