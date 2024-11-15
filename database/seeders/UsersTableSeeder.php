@@ -12,6 +12,9 @@ class UsersTableSeeder extends Seeder
      *
      * @return void
      */
+
+     // semua akun seeder sudah saya ubah credentialnya, silahkan coba saja di website deploy saya
+     // akun seeder ini cuman untuk local host.
     public function run()
     {
         User::factory()->create([
